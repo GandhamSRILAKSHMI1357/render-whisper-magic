@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useMutation } from "@tanstack/react-query";
 import { useEffect, useRef, useState } from "react";
@@ -167,15 +167,16 @@ function Index() {
           </div>
           <div className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
             <a href="#studio" className="hover:text-foreground">Studio</a>
+            <Link to="/create" className="hover:text-foreground">Create a film</Link>
             <a href="#capabilities" className="hover:text-foreground">Capabilities</a>
             <a href="#gallery" className="hover:text-foreground">Gallery</a>
           </div>
-          <a
-            href="#studio"
+          <Link
+            to="/create"
             className="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-4 py-2 text-sm font-medium text-primary-foreground shadow-gold transition hover:brightness-110"
           >
-            Open Studio <ArrowRight className="h-4 w-4" />
-          </a>
+            Create a film <ArrowRight className="h-4 w-4" />
+          </Link>
         </nav>
 
         <div className="mx-auto max-w-7xl px-6 pb-28 pt-20 md:pb-40 md:pt-32">
@@ -191,14 +192,14 @@ function Index() {
               video concepts — in a studio that feels designed, not generated.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <a
-                href="#studio"
+              <Link
+                to="/create"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-medium text-primary-foreground shadow-gold transition hover:brightness-110"
               >
-                Start creating <Sparkles className="h-4 w-4" />
-              </a>
-              <a href="#capabilities" className="text-sm text-muted-foreground hover:text-foreground">
-                See what it makes →
+                Start step-by-step <Sparkles className="h-4 w-4" />
+              </Link>
+              <a href="#studio" className="text-sm text-muted-foreground hover:text-foreground">
+                Or use the quick studio →
               </a>
             </div>
           </div>
