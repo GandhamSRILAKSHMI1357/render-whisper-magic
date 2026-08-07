@@ -192,14 +192,14 @@ function Index() {
               video concepts — in a studio that feels designed, not generated.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <a
-                href="#studio"
+              <Link
+                to="/create"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-medium text-primary-foreground shadow-gold transition hover:brightness-110"
               >
-                Start creating <Sparkles className="h-4 w-4" />
-              </a>
-              <a href="#capabilities" className="text-sm text-muted-foreground hover:text-foreground">
-                See what it makes →
+                Start step-by-step <Sparkles className="h-4 w-4" />
+              </Link>
+              <a href="#studio" className="text-sm text-muted-foreground hover:text-foreground">
+                Or use the quick studio →
               </a>
             </div>
           </div>
