@@ -167,15 +167,16 @@ function Index() {
           </div>
           <div className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
             <a href="#studio" className="hover:text-foreground">Studio</a>
+            <Link to="/create" className="hover:text-foreground">Create a film</Link>
             <a href="#capabilities" className="hover:text-foreground">Capabilities</a>
             <a href="#gallery" className="hover:text-foreground">Gallery</a>
           </div>
-          <a
-            href="#studio"
+          <Link
+            to="/create"
             className="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-4 py-2 text-sm font-medium text-primary-foreground shadow-gold transition hover:brightness-110"
           >
-            Open Studio <ArrowRight className="h-4 w-4" />
-          </a>
+            Create a film <ArrowRight className="h-4 w-4" />
+          </Link>
         </nav>
 
         <div className="mx-auto max-w-7xl px-6 pb-28 pt-20 md:pb-40 md:pt-32">
